@@ -9,6 +9,11 @@ const withPWA = require('next-pwa')({
 const nextConfig = {
   reactStrictMode: true,
   turbopack: {},
+  // Allow importing JSON files
+  webpack: (config: any) => {
+    config.resolve.fallback = { fs: false };
+    return config;
+  },
 };
 
 module.exports = withPWA(nextConfig);

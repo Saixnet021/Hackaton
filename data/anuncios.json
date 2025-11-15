@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "titulo": "¡Vota Informado!",
+    "descripcion": "Conoce a tus candidatos y toma la mejor decisión para el futuro del país.",
+    "imagen": "https://images.unsplash.com/photo-1555848962-6b9f7d7f2b4b?w=800&h=400&fit=crop",
+    "activo": true
+  },
+  {
+    "id": 2,
+    "titulo": "Encuentra tu Mesa de Votación",
+    "descripcion": "Localiza fácilmente tu centro de votación con nuestra herramienta interactiva.",
+    "imagen": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=400&fit=crop",
+    "activo": true
+  },
+  {
+    "id": 3,
+    "titulo": "Participa en las Elecciones",
+    "descripcion": "Tu voto es fundamental para construir un mejor futuro.",
+    "imagen": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=800&h=400&fit=crop",
+    "activo": true
+  }
+]

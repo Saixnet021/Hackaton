@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import mesasData from '../data/mesas_votacion.json';
 import EncuestasSection from '../components/EncuestasSection';
+import CandidateComparison from '../components/CandidateComparison';
+import AnunciosCarousel from '../components/AnunciosCarousel';
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState('todas');
@@ -14,6 +16,7 @@ export default function Home() {
   const [mesaBusqueda, setMesaBusqueda] = useState('');
   const [showMesas, setShowMesas] = useState(false);
   const [showEncuestas, setShowEncuestas] = useState(false);
+  const [showCandidateComparison, setShowCandidateComparison] = useState(false);
 
   const timelineEvents = [
     {
@@ -131,19 +134,7 @@ export default function Home() {
     <div className="relative flex min-h-screen w-full flex-col">
       <main className="flex flex-1 justify-center">
         <div className="flex w-full max-w-6xl flex-col px-6 py-10 md:py-16">
-          <section className="w-full @container">
-            <div className="@[480px]:p-0">
-              <div className="flex min-h-[480px] flex-col items-start justify-end gap-6 rounded-xl bg-cover bg-center bg-no-repeat p-6 pb-10 @[480px]:gap-8 @[480px]:p-12" style={{ backgroundImage: 'linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGDVRbQop3NebPrqZTMNf7M6wBTmQVTxEU68OHamkrv3Q_GY9P_CoVwo1YeNmQNIq3dIYrmau4tvurOrjGpFlTBEr_Bk6Px8kfkTA_jr9moTbmLH8FOsEaKSWOZfngmmvd4iCQlh9-98Cs7fRadRdSaw24uaX7TU8aRriT9YfGpyWjVZJN5jIgdlzeKa5GEQhpTFTOSOXPfgG_I12F35VXh2QePd8vUc7mo28s8l-Y_wfxll-JpCnw6S0vzWsQGQ32epf2FN-Z9zw")' }}>
-                <div className="flex flex-col gap-2 text-left">
-                  <h1 className="text-4xl font-black leading-tight tracking-tight text-white @[480px]:text-5xl">Tu Voto, Tu Voz. Infórmate y Decide.</h1>
-                  <h2 className="max-w-xl text-base font-normal leading-normal text-slate-200 @[480px]:text-lg">La herramienta definitiva para conocer a tus candidatos, encontrar tu mesa y entender las encuestas.</h2>
-                </div>
-                <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 py-3 text-base font-bold leading-normal tracking-wide text-white transition-transform hover:scale-105">
-                  <span className="truncate">Explorar plataforma</span>
-                </button>
-              </div>
-            </div>
-          </section>
+          <AnunciosCarousel />
 
           <section className="flex flex-col gap-10 py-16 md:py-24">
             <div className="flex flex-col gap-4 text-center">
@@ -270,7 +261,10 @@ export default function Home() {
                   <p className="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Localiza tu centro de votación de forma rápida y sencilla para que sepas exactamente a dónde ir.</p>
                 </div>
               </div>
-              <div className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50">
+              <div
+                className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50 cursor-pointer"
+                onClick={() => setShowCandidateComparison(!showCandidateComparison)}
+              >
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
                   <span className="material-symbols-outlined text-2xl">groups</span>
                 </div>
@@ -293,6 +287,9 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          {/* Sección de Comparación de Candidatos */}
+          {showCandidateComparison && <CandidateComparison />}
 
           {/* Sección de Encuestas */}
           {showEncuestas && <EncuestasSection />}
