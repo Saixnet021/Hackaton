@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "titulo": "Ana García presenta plan de digitalización nacional",
+    "subtitulo": "La candidata propone inversión histórica en tecnología para modernizar el Estado",
+    "contenido": "Ana García, candidata presidencial del Partido de la Innovación, presentó hoy su plan de digitalización total del Estado, que contempla una inversión de S/ 5.2 mil millones en los próximos cuatro años. El plan incluye la creación de una plataforma única de trámites digitales y la implementación de identidad digital nacional.",
+    "fuente": "El Comercio",
+    "fecha": "2024-11-01",
+    "categoria": "economia",
+    "imagen": "/noticia-digitalizacion.jpg",
+    "url": "https://elcomercio.pe/politica/ana-garcia-plan-digitalizacion-nacional-noticia-12345/",
+    "candidatos_relacionados": [1],
+    "etiquetas": ["digitalización", "tecnología", "gobierno electrónico"]
+  },
+  {
+    "id": 2,
+    "titulo": "Luis Martínez anuncia reforma laboral integral",
+    "subtitulo": "Sindicalista propone cambios profundos en legislación laboral",
+    "contenido": "Luis Martínez, líder del movimiento sindical y candidato por Unión por el Futuro, anunció una reforma laboral integral que busca modernizar las relaciones de trabajo en el Perú. La propuesta incluye el fortalecimiento de los sindicatos y mejores condiciones para los trabajadores informales.",
+    "fuente": "El Comercio",
+    "fecha": "2024-11-05",
+    "categoria": "trabajo",
+    "imagen": "/noticia-reforma-laboral.jpg",
+    "url": "https://elcomercio.pe/economia/luis-martinez-reforma-laboral-noticia-12346/",
+    "candidatos_relacionados": [2],
+    "etiquetas": ["reforma laboral", "sindicatos", "derechos laborales"]
+  },
+  {
+    "id": 3,
+    "titulo": "Sofía Rodríguez propone revolución verde para Perú",
+    "subtitulo": "Ambientalista presenta ambicioso plan de sostenibilidad",
+    "contenido": "Sofía Rodríguez, candidata del Movimiento Verde, presentó su plan de transición energética que busca lograr la carbono neutralidad para 2040. La propuesta incluye inversiones masivas en energías renovables y la protección del 30% del territorio nacional.",
+    "fuente": "El Comercio",
+    "fecha": "2024-11-03",
+    "categoria": "medio_ambiente",
+    "imagen": "/noticia-transicion-verde.jpg",
+    "url": "https://elcomercio.pe/ambiente/sofia-rodriguez-transicion-verde-noticia-12347/",
+    "candidatos_relacionados": [3],
+    "etiquetas": ["medio ambiente", "energías renovables", "cambio climático"]
+  },
+  {
+    "id": 4,
+    "titulo": "Debate presidencial: candidatos discuten economía digital",
+    "subtitulo": "Primer encuentro televisado genera posiciones encontradas",
+    "contenido": "Los tres principales candidatos presidenciales participaron en el primer debate organizado por el Jurado Nacional de Elecciones. Los temas centrales fueron la digitalización del Estado, la reforma tributaria y la transición energética.",
+    "fuente": "El Comercio",
+    "fecha": "2024-10-28",
+    "categoria": "debate",
+    "imagen": "/noticia-debate-presidencial.jpg",
+    "url": "https://elcomercio.pe/politica/debate-presidencial-economia-digital-noticia-12348/",
+    "candidatos_relacionados": [1, 2, 3],
+    "etiquetas": ["debate", "elecciones", "economía"]
+  },
+  {
+    "id": 5,
+    "titulo": "Encuesta revela tendencias electorales",
+    "subtitulo": "Ana García lidera intención de voto según último sondeo",
+    "contenido": "Según la última encuesta de opinión pública realizada por IPSOS, Ana García lidera la intención de voto con 32%, seguida por Luis Martínez con 28% y Sofía Rodríguez con 25%. La encuesta fue realizada entre el 15 y 20 de octubre.",
+    "fuente": "El Comercio",
+    "fecha": "2024-10-25",
+    "categoria": "encuestas",
+    "imagen": "/noticia-encuesta.jpg",
+    "url": "https://elcomercio.pe/politica/encuesta-intencion-voto-noticia-12349/",
+    "candidatos_relacionados": [1, 2, 3],
+    "etiquetas": ["encuesta", "intención de voto", "tendencias"]
+  }
+]

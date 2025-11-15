@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "candidatoId": 1,
+    "titulo": "Digitalización Total del Estado",
+    "sector": "economia",
+    "descripcion": "Implementar un sistema unificado de gobierno electrónico que permita a los ciudadanos acceder a todos los servicios públicos desde cualquier dispositivo.",
+    "detalles": [
+      "Plataforma única de trámites digitales",
+      "Identidad digital nacional",
+      "Blockchain para contratos públicos",
+      "IA para optimización de procesos administrativos"
+    ],
+    "presupuesto": "S/ 5.2 mil millones",
+    "plazo": "4 años"
+  },
+  {
+    "id": 2,
+    "candidatoId": 1,
+    "titulo": "Educación Digital para Todos",
+    "sector": "educacion",
+    "descripcion": "Garantizar acceso universal a internet de alta velocidad y formación en tecnologías digitales desde la educación básica.",
+    "detalles": [
+      "Internet gratuito en 25,000 escuelas públicas",
+      "Programa de formación en coding para 1 millón de estudiantes",
+      "Plataformas educativas virtuales gratuitas",
+      "Certificación digital de competencias"
+    ],
+    "presupuesto": "S/ 3.8 mil millones",
+    "plazo": "3 años"
+  },
+  {
+    "id": 3,
+    "candidatoId": 2,
+    "titulo": "Reforma Tributaria Progresiva",
+    "sector": "economia",
+    "descripcion": "Implementar un sistema tributario justo que reduzca la desigualdad y financie servicios sociales universales.",
+    "detalles": [
+      "Impuesto a grandes fortunas (> S/ 10 millones)",
+      "Reducción del IGV para productos básicos",
+      "Eliminación de exoneraciones tributarias injustas",
+      "Fortalecimiento de la SUNAT con tecnología"
+    ],
+    "presupuesto": "Incremento de recaudación: S/ 8 mil millones anuales",
+    "plazo": "2 años"
+  },
+  {
+    "id": 4,
+    "candidatoId": 2,
+    "titulo": "Salud Universal y Gratuita",
+    "sector": "salud",
+    "descripcion": "Garantizar acceso universal a servicios de salud de calidad sin costo para los ciudadanos.",
+    "detalles": [
+      "Ampliación de cobertura del SIS al 100%",
+      "Construcción de 500 centros de salud",
+      "Incremento salarial para médicos y enfermeras",
+      "Sistema de telemedicina nacional"
+    ],
+    "presupuesto": "S/ 12 mil millones anuales",
+    "plazo": "4 años"
+  },
+  {
+    "id": 5,
+    "candidatoId": 3,
+    "titulo": "Transición Energética Verde",
+    "sector": "medio_ambiente",
+    "descripcion": "Migrar hacia energías renovables para lograr la carbono neutralidad y crear empleos verdes.",
+    "detalles": [
+      "50% de energías renovables para 2030",
+      "Parques eólicos y solares en costa norte y sur",
+      "Programa de reconversión laboral para mineros",
+      "Incentivos fiscales para empresas verdes"
+    ],
+    "presupuesto": "S/ 15 mil millones",
+    "plazo": "6 años"
+  },
+  {
+    "id": 6,
+    "candidatoId": 3,
+    "titulo": "Protección de la Amazonía",
+    "sector": "medio_ambiente",
+    "descripcion": "Proteger y restaurar la Amazonía peruana mediante políticas integrales de conservación.",
+    "detalles": [
+      "30% del territorio nacional protegido",
+      "Titulación de tierras para comunidades indígenas",
+      "Programa de reforestación de 1 millón de hectáreas",
+      "Control satelital de deforestación ilegal"
+    ],
+    "presupuesto": "S/ 4.5 mil millones",
+    "plazo": "5 años"
+  }
+]

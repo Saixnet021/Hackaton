@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "nombre": "Partido de la Innovación",
+    "logo": "/partido-innovacion.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Unión por el Futuro",
+    "logo": "/union-futuro.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Movimiento Verde",
+    "logo": "/movimiento-verde.png"
+  }
+]

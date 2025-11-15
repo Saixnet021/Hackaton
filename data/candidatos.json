@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombres": "Ana",
+    "apellidos": "García",
+    "partidoId": 1,
+    "foto": "/ana-garcia.jpg",
+    "resumen": "Ana García es una política con más de 15 años de experiencia en el sector público, enfocada en la innovación y el desarrollo tecnológico."
+  },
+  {
+    "id": 2,
+    "nombres": "Luis",
+    "apellidos": "Martínez",
+    "partidoId": 2,
+    "foto": "/luis-martinez.jpg",
+    "resumen": "Luis Martínez es un líder comunitario y activista que ha trabajado incansablemente por los derechos de los trabajadores y la justicia social."
+  },
+  {
+    "id": 3,
+    "nombres": "Sofía",
+    "apellidos": "Rodríguez",
+    "partidoId": 3,
+    "foto": "/sofia-rodriguez.jpg",
+    "resumen": "Sofía Rodríguez es una ambientalista y científica que busca impulsar políticas de sostenibilidad y protección del medio ambiente."
+  }
+]

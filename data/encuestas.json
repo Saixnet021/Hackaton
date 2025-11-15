@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "titulo": "Intención de Voto Presidencial - Octubre 2024",
+    "empresa": "IPSOS Perú",
+    "fecha": "2024-10-25",
+    "muestra": 1200,
+    "margen_error": "±2.8%",
+    "resultados": [
+      {
+        "candidatoId": 1,
+        "nombre": "Ana García",
+        "porcentaje": 32.0,
+        "votos": 384
+      },
+      {
+        "candidatoId": 2,
+        "nombre": "Luis Martínez",
+        "porcentaje": 28.0,
+        "votos": 336
+      },
+      {
+        "candidatoId": 3,
+        "nombre": "Sofía Rodríguez",
+        "porcentaje": 25.0,
+        "votos": 300
+      },
+      {
+        "otros": true,
+        "nombre": "Otros",
+        "porcentaje": 15.0,
+        "votos": 180
+      }
+    ],
+    "tendencia": "estable",
+    "notas": "Encuesta realizada del 15 al 20 de octubre de 2024"
+  },
+  {
+    "id": 2,
+    "titulo": "Preferencias por Sector - Reforma Educativa",
+    "empresa": "Datum Internacional",
+    "fecha": "2024-10-20",
+    "muestra": 800,
+    "margen_error": "±3.5%",
+    "resultados": [
+      {
+        "candidatoId": 1,
+        "nombre": "Ana García",
+        "porcentaje": 35.0,
+        "votos": 280
+      },
+      {
+        "candidatoId": 2,
+        "nombre": "Luis Martínez",
+        "porcentaje": 30.0,
+        "votos": 240
+      },
+      {
+        "candidatoId": 3,
+        "nombre": "Sofía Rodríguez",
+        "porcentaje": 20.0,
+        "votos": 160
+      },
+      {
+        "otros": true,
+        "nombre": "Otros",
+        "porcentaje": 15.0,
+        "votos": 120
+      }
+    ],
+    "tendencia": "ascendente",
+    "notas": "Pregunta: ¿Cuál candidato tiene las mejores propuestas educativas?"
+  },
+  {
+    "id": 3,
+    "titulo": "Confianza en Candidatos - Septiembre 2024",
+    "empresa": "CPI Perú",
+    "fecha": "2024-09-30",
+    "muestra": 1500,
+    "margen_error": "±2.5%",
+    "resultados": [
+      {
+        "candidatoId": 1,
+        "nombre": "Ana García",
+        "porcentaje": 45.0,
+        "votos": 675
+      },
+      {
+        "candidatoId": 2,
+        "nombre": "Luis Martínez",
+        "porcentaje": 38.0,
+        "votos": 570
+      },
+      {
+        "candidatoId": 3,
+        "nombre": "Sofía Rodríguez",
+        "porcentaje": 40.0,
+        "votos": 600
+      },
+      {
+        "otros": true,
+        "nombre": "Ninguno",
+        "porcentaje": 22.0,
+        "votos": 330
+      }
+    ],
+    "tendencia": "estable",
+    "notas": "Pregunta: ¿Confía en que este candidato cumplirá sus promesas?"
+  }
+]

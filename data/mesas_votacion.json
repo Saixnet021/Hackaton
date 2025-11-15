@@ -1,0 +1,139 @@
+[
+  {
+    "id": 1,
+    "codigo": "010101",
+    "departamento": "Lima",
+    "provincia": "Lima",
+    "distrito": "Miraflores",
+    "local": "Colegio Nacional Nuestra Señora de Guadalupe",
+    "direccion": "Av. José Larco 1234, Miraflores",
+    "referencia": "Cerca al Parque Kennedy",
+    "coordenadas": {
+      "lat": -12.1219,
+      "lng": -77.0299
+    },
+    "mesas": [
+      { "numero": "001", "electores": 350 },
+      { "numero": "002", "electores": 348 },
+      { "numero": "003", "electores": 352 }
+    ],
+    "total_electores": 1050,
+    "tipo_local": "Educativo",
+    "accesibilidad": {
+      "rampa": true,
+      "ascensor": false,
+      "estacionamiento": true,
+      "baños_adaptados": true
+    }
+  },
+  {
+    "id": 2,
+    "codigo": "010102",
+    "departamento": "Lima",
+    "provincia": "Lima",
+    "distrito": "San Isidro",
+    "local": "Universidad del Pacífico",
+    "direccion": "Av. Salaverry 2020, San Isidro",
+    "referencia": "Frente al Country Club",
+    "coordenadas": {
+      "lat": -12.0994,
+      "lng": -77.0528
+    },
+    "mesas": [
+      { "numero": "001", "electores": 280 },
+      { "numero": "002", "electores": 275 },
+      { "numero": "003", "electores": 282 },
+      { "numero": "004", "electores": 278 }
+    ],
+    "total_electores": 1115,
+    "tipo_local": "Universitario",
+    "accesibilidad": {
+      "rampa": true,
+      "ascensor": true,
+      "estacionamiento": true,
+      "baños_adaptados": true
+    }
+  },
+  {
+    "id": 3,
+    "codigo": "010103",
+    "departamento": "Lima",
+    "provincia": "Lima",
+    "distrito": "Barranco",
+    "local": "Museo de Arte de Lima - MALI",
+    "direccion": "Paseo Colón 125, Barranco",
+    "referencia": "A una cuadra del Puente de los Suspiros",
+    "coordenadas": {
+      "lat": -12.1444,
+      "lng": -77.0217
+    },
+    "mesas": [
+      { "numero": "001", "electores": 220 },
+      { "numero": "002", "electores": 215 }
+    ],
+    "total_electores": 435,
+    "tipo_local": "Cultural",
+    "accesibilidad": {
+      "rampa": true,
+      "ascensor": false,
+      "estacionamiento": false,
+      "baños_adaptados": false
+    }
+  },
+  {
+    "id": 4,
+    "codigo": "150101",
+    "departamento": "Arequipa",
+    "provincia": "Arequipa",
+    "distrito": "Cercado",
+    "local": "Universidad Nacional de San Agustín",
+    "direccion": "Av. Venezuela s/n, Cercado",
+    "referencia": "Campus principal, puerta principal",
+    "coordenadas": {
+      "lat": -16.3989,
+      "lng": -71.5369
+    },
+    "mesas": [
+      { "numero": "001", "electores": 450 },
+      { "numero": "002", "electores": 445 },
+      { "numero": "003", "electores": 448 },
+      { "numero": "004", "electores": 452 },
+      { "numero": "005", "electores": 447 }
+    ],
+    "total_electores": 2242,
+    "tipo_local": "Universitario",
+    "accesibilidad": {
+      "rampa": true,
+      "ascensor": true,
+      "estacionamiento": true,
+      "baños_adaptados": true
+    }
+  },
+  {
+    "id": 5,
+    "codigo": "040101",
+    "departamento": "Cusco",
+    "provincia": "Cusco",
+    "distrito": "Cusco",
+    "local": "Centro Cultural Cusco",
+    "direccion": "Av. El Sol 103, Cusco",
+    "referencia": "Centro Histórico, cerca de la Plaza de Armas",
+    "coordenadas": {
+      "lat": -13.5167,
+      "lng": -71.9781
+    },
+    "mesas": [
+      { "numero": "001", "electores": 320 },
+      { "numero": "002", "electores": 315 },
+      { "numero": "003", "electores": 318 }
+    ],
+    "total_electores": 953,
+    "tipo_local": "Cultural",
+    "accesibilidad": {
+      "rampa": false,
+      "ascensor": false,
+      "estacionamiento": false,
+      "baños_adaptados": false
+    }
+  }
+]

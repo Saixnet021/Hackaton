@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "fecha": "2026-01-15",
+    "evento": "Inicio de campañas electorales",
+    "descripcion": "Los candidatos inician oficialmente sus campañas a nivel nacional."
+  },
+  {
+    "id": 2,
+    "fecha": "2026-03-01",
+    "evento": "Primer debate presidencial",
+    "descripcion": "Debate televisado entre los principales candidatos a la presidencia."
+  },
+  {
+    "id": 3,
+    "fecha": "2026-04-05",
+    "evento": "Cierre de campañas electorales",
+    "descripcion": "Último día para realizar actos de campaña antes de la veda electoral."
+  }
+]
