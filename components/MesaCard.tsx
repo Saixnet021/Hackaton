@@ -1,19 +1,24 @@
 'use client';
 
 interface Mesa {
-  id: string;
-  local: string;
-  direccion: string;
+  id: number;
+  codigo: string;
   departamento: string;
   provincia: string;
   distrito: string;
-  tipo_local: string;
+  local: string;
+  direccion: string;
   referencia: string;
-  total_electores: number;
+  coordenadas: {
+    lat: number;
+    lng: number;
+  };
   mesas: Array<{
-    numero: number;
+    numero: string;
     electores: number;
   }>;
+  total_electores: number;
+  tipo_local: string;
   accesibilidad: {
     rampa: boolean;
     ascensor: boolean;

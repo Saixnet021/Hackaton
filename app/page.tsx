@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import mesasData from '../data/mesas_votacion.json';
+import EncuestasSection from '../components/EncuestasSection';
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState('todas');
@@ -12,6 +13,7 @@ export default function Home() {
   });
   const [mesaBusqueda, setMesaBusqueda] = useState('');
   const [showMesas, setShowMesas] = useState(false);
+  const [showEncuestas, setShowEncuestas] = useState(false);
 
   const timelineEvents = [
     {
@@ -121,7 +123,7 @@ export default function Home() {
   const provincias = [...new Set(mesasData.filter(m => mesaFilter.departamento === '' || m.departamento === mesaFilter.departamento).map(m => m.provincia))];
   const distritos = [...new Set(mesasData.filter(m => (mesaFilter.departamento === '' || m.departamento === mesaFilter.departamento) && (mesaFilter.provincia === '' || m.provincia === mesaFilter.provincia)).map(m => m.distrito))];
 
-  const handleMesaFilterChange = (campo, valor) => {
+  const handleMesaFilterChange = (campo: string, valor: string) => {
     setMesaFilter(prev => ({ ...prev, [campo]: valor }));
   };
 
@@ -277,7 +279,10 @@ export default function Home() {
                   <p className="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Visualiza perfiles, propuestas y trayectorias de los candidatos para comparar sus posturas.</p>
                 </div>
               </div>
-              <div className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50">
+              <div
+                className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50 cursor-pointer"
+                onClick={() => setShowEncuestas(!showEncuestas)}
+              >
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
                   <span className="material-symbols-outlined text-2xl">poll</span>
                 </div>
@@ -288,6 +293,9 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          {/* Sección de Encuestas */}
+          {showEncuestas && <EncuestasSection />}
 
           {/* Sección de Mesas de Votación */}
           {showMesas && (

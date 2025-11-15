@@ -3,8 +3,35 @@
 import { useState, useEffect } from 'react';
 import mesasData from '../../data/mesas_votacion.json';
 
+interface Mesa {
+  id: number;
+  codigo: string;
+  departamento: string;
+  provincia: string;
+  distrito: string;
+  local: string;
+  direccion: string;
+  referencia: string;
+  coordenadas: {
+    lat: number;
+    lng: number;
+  };
+  mesas: {
+    numero: string;
+    electores: number;
+  }[];
+  total_electores: number;
+  tipo_local: string;
+  accesibilidad: {
+    rampa: boolean;
+    ascensor: boolean;
+    estacionamiento: boolean;
+    baños_adaptados: boolean;
+  };
+}
+
 export default function MesasPage() {
-  const [mesas, setMesas] = useState(mesasData);
+  const [mesas, setMesas] = useState<Mesa[]>(mesasData);
   const [filtros, setFiltros] = useState({
     departamento: '',
     provincia: '',
@@ -12,7 +39,7 @@ export default function MesasPage() {
     tipo_local: ''
   });
   const [busqueda, setBusqueda] = useState('');
-  const [mesaSeleccionada, setMesaSeleccionada] = useState(null);
+  const [mesaSeleccionada, setMesaSeleccionada] = useState<Mesa | null>(null);
 
   // Obtener opciones únicas para filtros
   const departamentos = [...new Set(mesasData.map(m => m.departamento))];
@@ -34,11 +61,11 @@ export default function MesasPage() {
     return coincideBusqueda && coincideFiltros;
   });
 
-  const handleFiltroChange = (campo, valor) => {
+  const handleFiltroChange = (campo: string, valor: string) => {
     setFiltros(prev => ({ ...prev, [campo]: valor }));
   };
 
-  const getIconoAccesibilidad = (accesibilidad) => {
+  const getIconoAccesibilidad = (accesibilidad: Mesa['accesibilidad']) => {
     const items = [];
     if (accesibilidad.rampa) items.push({ icono: 'accessible', label: 'Rampa' });
     if (accesibilidad.ascensor) items.push({ icono: 'elevator', label: 'Ascensor' });

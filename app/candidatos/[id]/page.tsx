@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import candidatos from '../../../data/candidatos.json';
 import partidos from '../../../data/partidos.json';
 
-export default async function CandidatoDetailPage({ params }) {
+export default async function CandidatoDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const candidato = candidatos.find(c => c.id === parseInt(id));
 
@@ -37,7 +37,7 @@ export default async function CandidatoDetailPage({ params }) {
   );
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return candidatos.map((candidato) => ({
     id: candidato.id.toString(),
   }));
