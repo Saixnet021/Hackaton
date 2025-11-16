@@ -1,0 +1,189 @@
+[
+    {
+      "id_comparacion": "1-2",
+      "candidato1_id": 1,
+      "candidato2_id": 2,
+      "analisis_por_tema": [
+        {
+          "tema": "Seguridad Ciudadana",
+          "coincidencias": [
+            "Ambos coinciden en impulsar una política de 'mano dura' y en el uso de las Fuerzas Armadas en apoyo a la Policía Nacional (PNP)."
+          ],
+          "diferencias": [
+            "**Keiko Fujimori (FP):** Se centra en la implementación de tecnología de vigilancia y el uso de inteligencia policial.",
+            "**Rafael López Aliaga (RP):** Propone medidas más extremas como la expulsión de la Corte IDH para aplicar la pena de muerte a delitos graves."
+          ],
+          "riesgos_potenciales": [
+            "El uso excesivo del ejército en tareas civiles puede generar conflictos de competencias y riesgos de violaciones a derechos humanos.",
+            "La propuesta de López Aliaga de la pena de muerte es inconstitucional bajo los tratados internacionales vigentes en Perú."
+          ]
+        },
+        {
+          "tema": "Economía y Desarrollo",
+          "coincidencias": [
+            "Ambos comparten una visión pro-inversión privada como motor de la economía."
+          ],
+          "diferencias": [
+            "**Keiko Fujimori (FP):** Énfasis en la estabilidad jurídica y la promoción de grandes proyectos de infraestructura (APPs).",
+            "**Rafael López Aliaga (RP):** Mayor foco en la reducción del gasto estatal ('cero corrupción') y apoyo a PYMES con banca de desarrollo."
+          ],
+          "riesgos_potenciales": [
+            "Ambos modelos dependen en gran medida de los precios internacionales de commodities, lo cual introduce alta volatilidad."
+          ]
+        }
+      ]
+    },
+    {
+      "id_comparacion": "5-6",
+      "candidato1_id": 5,
+      "candidato2_id": 6,
+      "analisis_por_tema": [
+        {
+          "tema": "Reforma Constitucional",
+          "coincidencias": [
+            "Ambos candidatos coinciden en que se requieren cambios profundos en la estructura del Estado peruano."
+          ],
+          "diferencias": [
+            "**Julio Guzmán (PM):** Propone una reforma política gradual y modernizadora dentro de la estructura existente.",
+            "**Verónika Mendoza (JPP):** Propone una Asamblea Constituyente inmediata para redactar una nueva Carta Magna, cambiando el modelo económico."
+          ],
+          "riesgos_potenciales": [
+            "La propuesta de Mendoza podría generar inestabilidad económica y política a corto plazo por el cambio de reglas de juego."
+          ]
+        },
+        {
+          "tema": "Rol del Estado en la Economía",
+          "coincidencias": [
+            "Ambos buscan una mayor intervención estatal en la regulación de mercados y servicios básicos."
+          ],
+          "diferencias": [
+            "**Julio Guzmán (PM):** Intervención basada en la tecnocracia y la eficiencia para fomentar la competencia.",
+            "**Verónika Mendoza (JPP):** Intervención fuerte, regulación de monopolios y promoción de empresas estatales en sectores estratégicos."
+          ],
+          "riesgos_potenciales": [
+            "La excesiva regulación de precios (Mendoza) podría desincentivar la inversión y generar escasez en algunos sectores."
+          ]
+        }
+      ]
+    },
+    {
+      "id_comparacion": "3-7",
+      "candidato1_id": 3,
+      "candidato2_id": 7,
+      "analisis_por_tema": [
+        {
+          "tema": "Lucha contra la Corrupción",
+          "coincidencias": [
+            "Ambos tienen un discurso fuerte contra la corrupción y la necesidad de una limpieza en el sistema político."
+          ],
+          "diferencias": [
+            "**Martín Vizcarra (Indep.):** Se enfocó en reformas institucionales (cambio del CNM, referéndum) para combatir el problema desde la estructura.",
+            "**George Forsyth (VN):** Se enfoca en la gestión de calle y la transparencia administrativa en gobiernos locales, con menor énfasis en la reforma judicial profunda."
+          ],
+          "riesgos_potenciales": [
+            "La trayectoria de Vizcarra está marcada por investigaciones por corrupción, lo que resta credibilidad a su propuesta."
+          ]
+        }
+      ]
+    },
+    {
+        "id_comparacion": "4-5",
+        "candidato1_id": 4,
+        "candidato2_id": 5,
+        "analisis_por_tema": [
+          {
+            "tema": "Educación",
+            "coincidencias": [
+              "Ambos proponen un aumento en la inversión pública en el sector educativo, especialmente en zonas rurales."
+            ],
+            "diferencias": [
+              "**Pedro Castillo (PL):** Foco en el magisterio y en la revalorización del rol del profesor rural.",
+              "**Julio Guzmán (PM):** Énfasis en la modernización curricular, el uso de tecnología y la meritocracia para docentes."
+            ],
+            "riesgos_potenciales": [
+              "El modelo de Castillo podría priorizar el gasto sin asegurar la calidad de la reforma pedagógica.",
+              "El enfoque tecnocrático de Guzmán podría no abordar adecuadamente las brechas de infraestructura en zonas remotas."
+            ]
+          },
+          {
+            "tema": "Sistema Político",
+            "coincidencias": [
+              "Ambos critican fuertemente el actual sistema de partidos políticos y la inestabilidad institucional."
+            ],
+            "diferencias": [
+              "**Pedro Castillo (PL):** Propone una disolución del Congreso y la convocatoria a una Asamblea Constituyente (AC).",
+              "**Julio Guzmán (PM):** Propone reformas constitucionales vía referéndum y fortalecer los mecanismos de control y transparencia."
+            ],
+            "riesgos_potenciales": [
+              "La vía de la AC (Castillo) es de alto riesgo de confrontación política y paralización gubernamental."
+            ]
+          }
+        ]
+      },
+      {
+        "id_comparacion": "2-7",
+        "candidato1_id": 2,
+        "candidato2_id": 7,
+        "analisis_por_tema": [
+          {
+            "tema": "Gestión Pública",
+            "coincidencias": [
+              "Ambos provienen del ámbito de la gestión ejecutiva (Alcaldía/Empresas) y priorizan la acción rápida sobre la burocracia."
+            ],
+            "diferencias": [
+              "**Rafael López Aliaga (RP):** Visión ideológica marcada (conservadora/religiosa) aplicada a la gestión.",
+              "**George Forsyth (VN):** Enfoque más pragmático y de proximidad, basado en su experiencia en la Victoria."
+            ],
+            "riesgos_potenciales": [
+              "La velocidad de Forsyth en gestión podría llevar a omisiones en procesos formales o legales (ocurrido en su alcaldía)."
+            ]
+          },
+          {
+            "tema": "Salud",
+            "coincidencias": [
+              "Ambos buscan una participación más activa del sector privado en la provisión de servicios de salud."
+            ],
+            "diferencias": [
+              "**Rafael López Aliaga (RP):** Énfasis en el apoyo a congregaciones religiosas y clínicas privadas de bajo costo.",
+              "**George Forsyth (VN):** Foco en la modernización de los hospitales públicos y la digitalización de la atención."
+            ],
+            "riesgos_potenciales": [
+              "La excesiva dependencia en la esfera privada podría desfinanciar o descuidar la infraestructura de salud pública primaria."
+            ]
+          }
+        ]
+      },
+      {
+        "id_comparacion": "1-6",
+        "candidato1_id": 1,
+        "candidato2_id": 6,
+        "analisis_por_tema": [
+          {
+            "tema": "Modelo Económico",
+            "coincidencias": [
+              "Hay muy pocas coincidencias. Ambos representan extremos opuestos del espectro político-económico."
+            ],
+            "diferencias": [
+              "**Keiko Fujimori (FP):** Defiende el modelo económico social de mercado actual (promoción total de la inversión extranjera).",
+              "**Verónika Mendoza (JPP):** Propone el cambio de modelo vía Asamblea Constituyente, nacionalización/regulación de sectores clave."
+            ],
+            "riesgos_potenciales": [
+              "El modelo de Mendoza podría provocar una fuga masiva de capitales. El modelo de Fujimori mantiene la alta dependencia de las materias primas."
+            ]
+          },
+          {
+            "tema": "Derechos y Género",
+            "coincidencias": [
+              "Ninguna. Son opuestos."
+            ],
+            "diferencias": [
+              "**Keiko Fujimori (FP):** Postura conservadora, crítica al enfoque de género en la educación.",
+              "**Verónika Mendoza (JPP):** Postura progresista, defensa explícita de derechos de minorías y enfoque de género transversal."
+            ],
+            "riesgos_potenciales": [
+              "La polarización de este tema podría generar mayor fragmentación social y política, independientemente de quién gane."
+            ]
+          }
+        ]
+      }
+  ]
