@@ -2,6 +2,7 @@ import calendario from '../../data/calendario.json';
 
 export default function CalendarioPage() {
   return (
+    <div className="w-full min-h-screen bg-white text-black opacity-100">
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-center mb-8">Calendario Electoral 2026</h1>
       <div className="space-y-4">
@@ -19,6 +20,7 @@ export default function CalendarioPage() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

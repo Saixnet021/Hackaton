@@ -1,3 +1,4 @@
+
 'use client';
 
 import { usePathname } from "next/navigation";
@@ -62,6 +63,8 @@ export default function ClientLayout({
                   <a className="text-sm font-medium text-gray-800 hover:text-primary dark:text-gray-300 dark:hover:text-primary" href="/">Inicio</a>
                   <a className="text-sm font-medium text-gray-800 hover:text-primary dark:text-gray-300 dark:hover:text-primary" href="/candidatos">Candidatos</a>
                   <a className="text-sm font-medium text-gray-800 hover:text-primary dark:text-gray-300 dark:hover:text-primary" href="/calendario">Calendario</a>
+                  <a className="text-sm font-medium text-gray-800 hover:text-primary dark:text-gray-300 dark:hover:text-primary" href="/guia-electoral">Guia electoral</a>
+
                 </div>
                 <div className="flex items-center gap-4">
                   <button className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg bg-gray-200/60 text-gray-800 transition-colors hover:bg-gray-300/60 dark:bg-gray-800/60 dark:text-gray-300 dark:hover:bg-gray-700/60">

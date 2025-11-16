@@ -315,7 +315,7 @@ export default function Home() {
                     />
                   </div>
                   <button className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
-                    <span className="material-symbols-outlined mr-2">search</span>
+                    <span className="material-symbols-outlined mr-2">buscar</span>
                     Buscar
                   </button>
                 </div>
