@@ -20,13 +20,12 @@ export default function CandidateCard({ candidato }) {
       
       {/* Sección de la Foto */}
       <div className="relative h-60 w-full">
-        <Image 
-          src={fotoUrl || '/default-avatar.png'}
-          alt={`Foto de ${nombre}`}
-          layout="fill"
-          objectFit="cover"
-          className="transition duration-500 ease-in-out transform hover:scale-105"
-        />
+      <img
+              src={candidato.fotoUrl || '/default-avatar.png'} // Usar src directamente
+              alt={`Foto de ${candidato.nombres} ${candidato.apellidos}`}
+              // Estilos para la imagen dentro del contenedor circular
+              className="w-full h-full object-cover" 
+            />
       </div>
 
       {/* Contenido de la Tarjeta */}

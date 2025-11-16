@@ -1,30 +1,100 @@
 [
   {
     "id": 1,
-    "nombres": "Elena",
-    "apellidos": "Pérez",
+    "nombres": "Keiko Sofía",
+    "apellidos": "Fujimori Higuchi",
     "partidoId": 101,
-    "resumen": "Liderazgo, cambio y futuro para nuestra nación.",
-    "biografia": "Elena Pérez es una reconocida economista con 20 años de experiencia...",
-    "fotoUrl": "/images/elena-perez.jpg", 
+    "resumen": "Mano dura contra la delincuencia y reactivación económica con inversión privada.",
+    "biografia": "Administradora de empresas y líder del partido Fuerza Popular. Ha sido tres veces candidata presidencial, llegando a segunda vuelta en todas ellas. Fue Primera Dama del Perú (1994-2000) durante el gobierno de su padre, Alberto Fujimori. Su carrera política se ha centrado en la reivindicación del legado fujimorista y la defensa de la Constitución de 1993.",
+    "fotoUrl": "/images/A.jpg",
     "propuestas": [
-      "Reformar el sistema educativo con foco en tecnología.",
-      "Crear un fondo nacional para impulsar las energías limpias.",
-      "Implementar un plan de seguridad con alta tecnología y vigilancia comunitaria."
+      "Implementar un plan de seguridad con apoyo de las Fuerzas Armadas a la Policía.",
+      "Impulsar la inversión privada y promover las Alianzas Público-Privadas (APP) para generar empleo.",
+      "Defensa y mantenimiento de la Constitución de 1993."
     ]
   },
   {
     "id": 2,
-    "nombres": "Alan",
-    "apellidos": "Garcia",
-    "partidoId": 101,
-    "resumen": "Liderazgo, cambio y futuro para nuestra nación.",
-    "biografia": "Elena Pérez es una reconocida economista con 20 años de experiencia...",
-    "fotoUrl": "/images/elena-perez.jpg", 
+    "nombres": "Rafael Bernardo",
+    "apellidos": "López-Aliaga Cazorla",
+    "partidoId": 102,
+    "resumen": "Orden, salud y Dios. Un cambio radical para recuperar la moral y la economía.",
+    "biografia": "Empresario, ingeniero industrial y líder del partido Renovación Popular. Fue regidor de la Municipalidad de Lima y actualmente es el Alcalde Metropolitano de Lima. Es conocido por sus posturas ultraconservadoras y su fuerte enfoque en la moralidad pública y la defensa de la vida.",
+    "fotoUrl": "/images/b.jpg",
     "propuestas": [
-      "Reformar el sistema educativo con foco en tecnología.",
-      "Crear un fondo nacional para impulsar las energías limpias.",
-      "Implementar un plan de seguridad con alta tecnología y vigilancia comunitaria."
+      "Construir mega-cárceles y retirar al Perú de la Corte IDH para imponer la pena de muerte a violadores y sicarios.",
+      "Fortalecer el sistema de salud con prioridad en la salud preventiva y la nutrición infantil.",
+      "Impulsar el desarrollo de trenes costeros y carreteras para mejorar la conexión regional."
+    ]
+  },
+  {
+    "id": 3,
+    "nombres": "Martín Alberto",
+    "apellidos": "Vizcarra Cornejo",
+    "partidoId": 103,
+    "resumen": "Lucha frontal contra la corrupción y fortalecimiento institucional.",
+    "biografia": "Ingeniero civil y político. Fue Gobernador Regional de Moquegua y Presidente del Perú (2018-2020). Su gestión se centró en la reforma política y judicial, enfrentando la obstrucción del Congreso antes de ser vacado. Actualmente, sus candidaturas suelen estar inhabilitadas debido a procesos judiciales.",
+    "fotoUrl": "/images/C.jpg",
+    "propuestas": [
+      "Promover reformas judiciales y políticas para combatir la corrupción.",
+      "Mejorar la calidad educativa e invertir en infraestructura en regiones.",
+      "Defender el Estado de Derecho y fortalecer la independencia de los poderes del Estado."
+    ]
+  },
+  {
+    "id": 4,
+    "nombres": "José Pedro",
+    "apellidos": "Castillo Terrones",
+    "partidoId": 104,
+    "resumen": "No más pobres en un país rico. El cambio viene desde el pueblo.",
+    "biografia": "Profesor de primaria y político. Ganó notoriedad como líder sindical de huelgas magisteriales. Fue presidente del Perú (2021-2022) postulado por el partido Perú Libre, antes de ser destituido y detenido por intentar disolver el Congreso. Su base política se encuentra en los sectores rurales y populares.",
+    "fotoUrl": "/images/d.jpg",
+    "propuestas": [
+      "Convocar a una Asamblea Constituyente para redactar una nueva Constitución.",
+      "Redistribuir la riqueza y renegociar contratos de recursos naturales (minería, gas).",
+      "Aumentar el presupuesto del sector educación y mejorar la infraestructura en zonas rurales."
+    ]
+  },
+  {
+    "id": 5,
+    "nombres": "Julio Armando",
+    "apellidos": "Guzmán Cáceres",
+    "partidoId": 105,
+    "resumen": "El centro que busca la modernización del Estado y la meritocracia.",
+    "biografia": "Economista y político, fundador y líder del Partido Morado. Fue Viceministro de MYPE e Industria. Su propuesta se centra en la tecnocracia, la reforma institucional profunda y la defensa de la democracia liberal, presentándose como una alternativa de centro.",
+    "fotoUrl": "/images/e.jpg",
+    "propuestas": [
+      "Despolitizar y modernizar instituciones públicas a través de la meritocracia.",
+      "Impulsar una reforma universitaria que asegure la calidad y acceso a todos los peruanos.",
+      "Fomentar la inversión en ciencia y tecnología para diversificar la economía."
+    ]
+  },
+  {
+    "id": 6,
+    "nombres": "Verónika Fanny",
+    "apellidos": "Mendoza Frisch",
+    "partidoId": 106,
+    "resumen": "Justicia social, nueva economía y defensa de los derechos ambientales y humanos.",
+    "biografia": "Psicóloga, antropóloga y política, líder de la coalición de izquierda Juntos por el Perú (JPP). Su plataforma se enfoca en la redistribución de la riqueza, la regulación de sectores clave de la economía y la convocatoria a una asamblea constituyente.",
+    "fotoUrl": "/images/f.jpg",
+    "propuestas": [
+      "Impulsar una nueva Constitución para priorizar derechos sociales y soberanía económica.",
+      "Regulación de precios de servicios básicos y promover una banca de fomento estatal.",
+      "Prohibir la minería y actividades extractivas en cabeceras de cuenca y zonas sensibles."
+    ]
+  },
+  {
+    "id": 7,
+    "nombres": "George Patrick",
+    "apellidos": "Forsyth Sommer",
+    "partidoId": 107,
+    "resumen": "Un nuevo rostro, mano dura contra la corrupción y cercanía con la gente.",
+    "biografia": "Exfutbolista profesional, empresario y político. Fue Alcalde del distrito de La Victoria, ganando notoriedad por su lucha directa contra el comercio informal y la delincuencia. Representa una figura política más joven, enfocándose en la gestión práctica.",
+    "fotoUrl": "/images/g.jpg",
+    "propuestas": [
+      "Implementar tecnología para combatir la delincuencia urbana y reforzar el patrullaje municipal.",
+      "Crear mecanismos rápidos para formalizar a pequeños y medianos empresarios.",
+      "Descentralizar las inversiones y mejorar la gestión de residuos urbanos."
     ]
   }
 ]

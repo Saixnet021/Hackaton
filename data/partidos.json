@@ -1,8 +1,37 @@
 [
   {
     "id": 101,
-    "nombre": "Partido del Sol",
+    "nombre": "Fuerza Popular",
     "color": "#F59E0B"
+  },
+  {
+    "id": 102,
+    "nombre": "Renovación Popular",
+    "color": "#065F46" 
+  },
+  {
+    "id": 103,
+    "nombre": "Peruanos Por el Kambio (PPK)",
+    "color": "#3B82F6" 
+  },
+  {
+    "id": 104,
+    "nombre": "Perú Libre",
+    "color": "#DC2626" 
+  },
+  {
+    "id": 105,
+    "nombre": "Partido Morado",
+    "color": "#9333EA" 
+  },
+  {
+    "id": 106,
+    "nombre": "Juntos por el Perú (JPP)",
+    "color": "#EF4444" 
+  },
+  {
+    "id": 107,
+    "nombre": "Somos Perú",
+    "color": "#F97316" 
   }
- 
 ]
