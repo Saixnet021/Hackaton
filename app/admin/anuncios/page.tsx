@@ -28,7 +28,7 @@ const AdminAnunciosPage = () => {
 
   const loadAnuncios = async () => {
     try {
-      const response = await import('../../data/anuncios.json');
+      const response = await import('../../../data/anuncios.json');
       setAnuncios(response.default);
     } catch (error) {
       console.error('Error loading anuncios:', error);

@@ -26,8 +26,14 @@ const AdminCandidatosPage = () => {
             const csvData = Papa.parse(event.target.result as string, {
               header: true,
             });
-            const processedData = csvData.data.map((item: Record<string, unknown>) => ({ ...item, partido }));
-            setData(processedData);
+            const processedData = csvData.data
+            .filter((item): item is Record<string, unknown> => typeof item === 'object' && item !== null)
+            .map((item) => ({ 
+                ...item, 
+                partido: partido // Añadir la propiedad 'partido'
+            }));
+          
+          setData(processedData);
           }
         };
         reader.readAsText(file);
