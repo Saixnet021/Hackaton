@@ -5,6 +5,7 @@ import mesasData from '../data/mesas_votacion.json';
 import EncuestasSection from '../components/EncuestasSection';
 import CandidateComparison from '../components/CandidateComparison';
 import AnunciosCarousel from '../components/AnunciosCarousel';
+import TutorialSection from '../components/TutorialSection'; // ⬅️ 1. Importación añadida
 
 export default function Home() {
   const [activeFilter, setActiveFilter] = useState('todas');
@@ -470,8 +471,13 @@ export default function Home() {
                   </button>
                 </div>
               )}
+              
             </section>
           )}
+          
+          {/* ⬅️ 2. Componente de Tutorial del Sistema colocado al final */}
+          <TutorialSection /> 
+
         </div>
       </main>
     </div>
