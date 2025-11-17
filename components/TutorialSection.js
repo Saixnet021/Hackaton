@@ -1,11 +1,10 @@
 import React from 'react';
-
-// ⚠️ Reemplaza este ID con el ID real del video de tu tutorial del sistema.
-const VIDEO_ID = '9k9PNq8An8A'; 
+const VIDEO_ID = 'qBUX2a_-L8M'; 
 
 const TutorialSection = () => {
+  // Para incrustar un video (iframe), se usa el dominio 'youtube.com/embed/'
+  // y se le agrega el ID del video.
   const youtubeEmbedUrl = `https://www.youtube.com/embed/${VIDEO_ID}`;
-
   return (
     <div className="container mx-auto px-4 mt-12 mb-12">
       <div className="bg-white rounded-xl shadow-xl p-6 dark:bg-gray-800/80">
