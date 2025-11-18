@@ -1,24 +1,27 @@
 
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 
 const AdminLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
   const router = useRouter();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
     // Check authentication on mount and pathname change
-    const isLoggedIn = localStorage.getItem('adminLoggedIn');
-    if (isLoggedIn !== 'true') {
+    const loggedIn = localStorage.getItem('adminLoggedIn') === 'true';
+    setIsLoggedIn(loggedIn);
+    if (!loggedIn) {
       router.push('/admin/login');
     }
   }, [pathname, router]);
 
   const handleLogout = () => {
     localStorage.removeItem('adminLoggedIn');
+    setIsLoggedIn(false);
     router.push('/admin/login');
   };
 
@@ -30,15 +33,17 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
             Admin Dashboard
           </h1>
           <div className="flex items-center gap-4">
-            <button
-              onClick={handleLogout}
-              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors duration-200"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-              </svg>
-              Cerrar Sesión
-            </button>
+            {isLoggedIn && (
+              <button
+                onClick={handleLogout}
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors duration-200"
+              >
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                </svg>
+                Cerrar Sesión
+              </button>
+            )}
             <Link
               href="/"
               className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
@@ -53,7 +58,7 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
       </header>
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         <div className="px-4 py-6 sm:px-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Link href="/admin/candidatos" className={`block group ${pathname === '/admin/candidatos' ? 'ring-2 ring-blue-500' : ''}`}>
               <div className="bg-white overflow-hidden shadow-lg rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
                 <div className="p-6">
@@ -74,30 +79,6 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
                   </div>
                   <div className="mt-4">
                     <p className="text-sm text-gray-600">Gestiona la información de candidatos, carga hojas de vida y administra perfiles políticos.</p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-            <Link href="/admin/eventos" className={`block group ${pathname === '/admin/eventos' ? 'ring-2 ring-green-500' : ''}`}>
-              <div className="bg-white overflow-hidden shadow-lg rounded-xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100">
-                <div className="p-6">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center">
-                        <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="ml-4 w-0 flex-1">
-                      <dl>
-                        <dt className="text-sm font-medium text-gray-500 truncate group-hover:text-green-600 transition-colors">Eventos</dt>
-                        <dd className="text-xl font-semibold text-gray-900 group-hover:text-green-700 transition-colors">Administrar Eventos</dd>
-                      </dl>
-                    </div>
-                  </div>
-                  <div className="mt-4">
-                    <p className="text-sm text-gray-600">Crea y gestiona eventos electorales, fechas importantes y actividades relacionadas.</p>
                   </div>
                 </div>
               </div>

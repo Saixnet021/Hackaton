@@ -9,11 +9,11 @@ const TutorialSection = () => {
     <div className="container mx-auto px-4 mt-12 mb-12">
       <div className="bg-white rounded-xl shadow-xl p-6 dark:bg-gray-800/80">
         <h2 className="text-3xl font-black text-gray-900 dark:text-gray-100 mb-6 border-b pb-3">
-          📚 Tutorial de Uso del Sistema Completo
+           Tutorial de Uso del Sistema Completo
         </h2>
 
         <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-          Conoce todas las funcionalidades de nuestro sistema: cómo **navegar**, **seleccionar** candidatos, **comparar** propuestas y **acceder a los datos** detallados de cada partido.
+          Conoce todas las funcionalidades de nuestro sistema: cómo navegar, seleccionar candidatos, comparar propuestas y acceder a los datos detallados de cada partido.
         </p>
 
         {/* Contenedor Responsivo para el Video de YouTube */}

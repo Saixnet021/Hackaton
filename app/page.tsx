@@ -143,7 +143,65 @@ export default function Home() {
         <div className="flex w-full max-w-6xl flex-col px-6 py-10 md:py-16">
           <AnunciosCarousel />
 
-          <section className="flex flex-col gap-10 py-16 md:py-24">
+          <section className="flex flex-col gap-10 px-0 pb-16 pt-0 @container md:pb-24 mt-20">
+            <div className="flex flex-col gap-4 text-center">
+              <h1 className="mx-auto max-w-2xl text-3xl font-bold leading-tight tracking-tight text-gray-900 dark:text-gray-100 @[480px]:text-4xl">Herramientas para un Voto Informado</h1>
+              <p className="mx-auto max-w-2xl text-base font-normal leading-normal text-gray-600 dark:text-gray-400">Accede a toda la información que necesitas para tomar la mejor decisión en las próximas elecciones.</p>
+            </div>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div
+  className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50 cursor-pointer"
+  onClick={handleNavigation} // 👈 Llama a la nueva función de manejo
+>
+  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+    <span className="material-symbols-outlined text-2xl">where_to_vote</span>
+  </div>
+  <div className="flex flex-col gap-1">
+    <h2 className="text-lg font-bold leading-tight text-gray-900 dark:text-gray-100">Encuentra tu Mesa de Votación</h2>
+    <p className="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Localiza tu centro de votación de forma rápida y sencilla para que sepas exactamente a dónde ir.</p>
+  </div>
+</div>
+              <div
+                className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50 cursor-pointer"
+                onClick={() => {
+                  setShowCandidateComparison(!showCandidateComparison);
+                  setShowEncuestas(false);
+                }}
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+                  <span className="material-symbols-outlined text-2xl">groups</span>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <h2 className="text-lg font-bold leading-tight text-gray-900 dark:text-gray-100">Compara Candidatos</h2>
+                  <p className="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Visualiza perfiles, propuestas y trayectorias de los candidatos para comparar sus posturas.</p>
+                </div>
+              </div>
+              <div
+                className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50 cursor-pointer"
+                onClick={() => {
+                  setShowEncuestas(!showEncuestas);
+                  setShowCandidateComparison(false);
+                }}
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+                  <span className="material-symbols-outlined text-2xl">poll</span>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <h2 className="text-lg font-bold leading-tight text-gray-900 dark:text-gray-100">Explora las Encuestas</h2>
+                  <p className="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Consulta las últimas encuestas de opinión pública y sigue las tendencias electorales.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Sección de Comparación de Candidatos */}
+          {showCandidateComparison && <CandidateComparison />}
+
+          {/* Sección de Encuestas */}
+          {showEncuestas && <EncuestasSection />}
+
+          <section className="flex flex-col gap-10 pt-6 pb-16 md:pt-10 md:pb-24">
+
             <div className="flex flex-col gap-4 text-center">
               <h1 className="mx-auto max-w-2xl text-3xl font-bold leading-tight tracking-tight text-gray-900 dark:text-gray-100 @[480px]:text-4xl">Calendario Electoral</h1>
               <p className="mx-auto max-w-2xl text-base font-normal leading-normal text-gray-600 dark:text-gray-400">No te pierdas ninguna fecha importante. Consulta aquí los hitos clave del proceso electoral.</p>
@@ -250,50 +308,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="flex flex-col gap-10 px-0 pb-16 pt-0 @container md:pb-24">
-            <div className="flex flex-col gap-4 text-center">
-              <h1 className="mx-auto max-w-2xl text-3xl font-bold leading-tight tracking-tight text-gray-900 dark:text-gray-100 @[480px]:text-4xl">Herramientas para un Voto Informado</h1>
-              <p className="mx-auto max-w-2xl text-base font-normal leading-normal text-gray-600 dark:text-gray-400">Accede a toda la información que necesitas para tomar la mejor decisión en las próximas elecciones.</p>
-            </div>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            <div
-  className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50 cursor-pointer"
-  onClick={handleNavigation} // 👈 Llama a la nueva función de manejo
->
-  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
-    <span className="material-symbols-outlined text-2xl">where_to_vote</span>
-  </div>
-  <div className="flex flex-col gap-1">
-    <h2 className="text-lg font-bold leading-tight text-gray-900 dark:text-gray-100">Encuentra tu Mesa de Votación</h2>
-    <p className="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Localiza tu centro de votación de forma rápida y sencilla para que sepas exactamente a dónde ir.</p>
-  </div>
-</div>
-              <div
-                className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50 cursor-pointer"
-                onClick={() => setShowCandidateComparison(!showCandidateComparison)}
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
-                  <span className="material-symbols-outlined text-2xl">groups</span>
-                </div>
-                <div className="flex flex-col gap-1">
-                  <h2 className="text-lg font-bold leading-tight text-gray-900 dark:text-gray-100">Compara Candidatos</h2>
-                  <p className="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Visualiza perfiles, propuestas y trayectorias de los candidatos para comparar sus posturas.</p>
-                </div>
-              </div>
-              <div
-                className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50 cursor-pointer"
-                onClick={() => setShowEncuestas(!showEncuestas)}
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
-                  <span className="material-symbols-outlined text-2xl">poll</span>
-                </div>
-                <div className="flex flex-col gap-1">
-                  <h2 className="text-lg font-bold leading-tight text-gray-900 dark:text-gray-100">Explora las Encuestas</h2>
-                  <p className="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Consulta las últimas encuestas de opinión pública y sigue las tendencias electorales.</p>
-                </div>
-              </div>
-            </div>
-          </section>
+          
 
           {/* Sección de Comparación de Candidatos */}
           {showCandidateComparison && <CandidateComparison />}
@@ -333,6 +348,7 @@ export default function Home() {
                     value={mesaFilter.departamento}
                     onChange={(e) => handleMesaFilterChange('departamento', e.target.value)}
                     className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+                    aria-label="Seleccionar departamento"
                   >
                     <option value="">Todos los departamentos</option>
                     {departamentos.map(dep => (
@@ -344,6 +360,7 @@ export default function Home() {
                     value={mesaFilter.provincia}
                     onChange={(e) => handleMesaFilterChange('provincia', e.target.value)}
                     className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+                    aria-label="Seleccionar provincia"
                   >
                     <option value="">Todas las provincias</option>
                     {provincias.map(prov => (
@@ -355,6 +372,7 @@ export default function Home() {
                     value={mesaFilter.distrito}
                     onChange={(e) => handleMesaFilterChange('distrito', e.target.value)}
                     className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+                    aria-label="Seleccionar distrito"
                   >
                     <option value="">Todos los distritos</option>
                     {distritos.map(dist => (

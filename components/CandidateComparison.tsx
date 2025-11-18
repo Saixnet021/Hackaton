@@ -61,7 +61,7 @@ const AnalisisComparativo = ({ c1, c2 }: { c1: Candidato, c2: Candidato }) => {
     return (
       <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center dark:bg-red-900/20 dark:border-red-800">
         <p className="font-semibold text-red-800 dark:text-red-300">
-          ❌ No se ha encontrado un análisis comparativo estático para este par de candidatos ({c1.apellidos} vs {c2.apellidos}).
+          No se ha encontrado un análisis comparativo estático para este par de candidatos ({c1.apellidos} vs {c2.apellidos}).
         </p>
         <p className="text-sm text-red-700 dark:text-red-400 mt-2">
           Debes crear la entrada "{claveBusqueda}" en tu archivo `comparaciones_analisis.json`.
@@ -83,7 +83,7 @@ const AnalisisComparativo = ({ c1, c2 }: { c1: Candidato, c2: Candidato }) => {
           
           {/* Coincidencias */}
           <div className="mt-4 p-3 bg-emerald-50 rounded-lg dark:bg-emerald-900/40 border border-emerald-200 dark:border-emerald-800">
-            <h4 className="font-bold text-emerald-800 dark:text-emerald-300 text-base mb-1">✅ Coincidencias</h4>
+            <h4 className="font-bold text-emerald-800 dark:text-emerald-300 text-base mb-1">Coincidencias</h4>
             <ul className="list-disc list-inside text-sm text-emerald-700 dark:text-emerald-400 space-y-1">
               {item.coincidencias.map((c, i) => <li key={i}>{c}</li>)}
             </ul>
@@ -91,7 +91,7 @@ const AnalisisComparativo = ({ c1, c2 }: { c1: Candidato, c2: Candidato }) => {
 
           {/* Diferencias */}
           <div className="mt-4 p-3 bg-amber-50 rounded-lg dark:bg-amber-900/40 border border-amber-200 dark:border-amber-800">
-            <h4 className="font-bold text-amber-800 dark:text-amber-300 text-base mb-1">↔️ Diferencias Clave</h4>
+            <h4 className="font-bold text-amber-800 dark:text-amber-300 text-base mb-1">Diferencias Clave</h4>
             <ul className="list-disc list-inside text-sm text-amber-700 dark:text-amber-400 space-y-1">
               {item.diferencias.map((d, i) => <li key={i}>{d}</li>)}
             </ul>
@@ -99,7 +99,7 @@ const AnalisisComparativo = ({ c1, c2 }: { c1: Candidato, c2: Candidato }) => {
 
           {/* Riesgos */}
           <div className="mt-4 p-3 bg-rose-50 rounded-lg dark:bg-rose-900/40 border border-rose-200 dark:border-rose-800">
-            <h4 className="font-bold text-rose-800 dark:text-rose-300 text-base mb-1">⚠️ Riesgos/Desafíos</h4>
+            <h4 className="font-bold text-rose-800 dark:text-rose-300 text-base mb-1">Riesgos/Desafíos</h4>
             <ul className="list-disc list-inside text-sm text-rose-700 dark:text-rose-400 space-y-1">
               {item.riesgos_potenciales.map((r, i) => <li key={i}>{r}</li>)}
             </ul>
@@ -180,7 +180,7 @@ export default function CandidateComparison() {
     <section className="flex flex-col gap-10 py-16 md:py-24 bg-background-light dark:bg-background-dark min-h-screen">
       <div className="flex flex-col gap-4 text-center px-4">
         <h1 className="mx-auto max-w-2xl text-4xl font-black leading-tight tracking-tight text-gray-900 dark:text-gray-100">
-          Comparador de Candidatos 🤝
+          Comparador de Candidatos 
         </h1>
         <p className="mx-auto max-w-2xl text-base font-normal leading-normal text-gray-600 dark:text-gray-400">
           Selecciona **dos candidatos** para ver un análisis detallado de sus propuestas clave basado en nuestros datos estáticos.
