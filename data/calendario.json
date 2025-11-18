@@ -1,20 +1,58 @@
 [
   {
     "id": 1,
-    "fecha": "2026-01-15",
-    "evento": "Inicio de campañas electorales",
-    "descripcion": "Los candidatos inician oficialmente sus campañas a nivel nacional."
+    "fecha": "2025-10-01",
+    "evento": "Cierre del Padrón Electoral",
+    "descripcion": "Fecha límite para actualizar o cambiar el domicilio en el DNI y poder votar en la nueva jurisdicción.",
+    "importancia": "alta"
   },
   {
     "id": 2,
-    "fecha": "2026-03-01",
-    "evento": "Primer debate presidencial",
-    "descripcion": "Debate televisado entre los principales candidatos a la presidencia."
+    "fecha": "2026-01-15",
+    "evento": "Inicio de Campañas Electorales",
+    "descripcion": "Los candidatos inician oficialmente sus campañas a nivel nacional y la difusión de propaganda.",
+    "importancia": "media"
   },
   {
     "id": 3,
+    "fecha": "2026-02-20",
+    "evento": "Sorteo de Miembros de Mesa",
+    "descripcion": "La ONPE realiza el sorteo público para elegir a los ciudadanos que conformarán las mesas de sufragio.",
+    "importancia": "media"
+  },
+  {
+    "id": 4,
+    "fecha": "2026-03-01",
+    "evento": "Primer Debate Presidencial",
+    "descripcion": "Debate televisado entre los principales candidatos a la presidencia, organizado por el Jurado Nacional de Elecciones (JNE).",
+    "importancia": "alta"
+  },
+  {
+    "id": 5,
     "fecha": "2026-04-05",
-    "evento": "Cierre de campañas electorales",
-    "descripcion": "Último día para realizar actos de campaña antes de la veda electoral."
+    "evento": "Cierre de Campañas y Veda Electoral",
+    "descripcion": "Último día para realizar actos de campaña. A partir de esta fecha inicia la prohibición de propaganda.",
+    "importancia": "alta"
+  },
+  {
+    "id": 6,
+    "fecha": "2026-04-09",
+    "evento": "ELECCIONES GENERALES (Primera Vuelta)",
+    "descripcion": "Día del sufragio nacional para elegir al Presidente y a los Congresistas de la República.",
+    "importancia": "critica"
+  },
+  {
+    "id": 7,
+    "fecha": "2026-04-10",
+    "evento": "Publicación de Resultados Preliminares",
+    "descripcion": "La ONPE publica los primeros resultados oficiales en sus plataformas digitales.",
+    "importancia": "media"
+  },
+  {
+    "id": 8,
+    "fecha": "2026-06-11",
+    "evento": "SEGUNDA VUELTA Presidencial",
+    "descripcion": "Si ningún candidato obtiene más del 50% de votos válidos, se realiza una segunda vuelta entre los dos más votados.",
+    "importancia": "critica"
   }
 ]

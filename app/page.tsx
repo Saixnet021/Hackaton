@@ -18,8 +18,14 @@ export default function Home() {
   const [showMesas, setShowMesas] = useState(false);
   const [showEncuestas, setShowEncuestas] = useState(false);
   const [showCandidateComparison, setShowCandidateComparison] = useState(false);
-
-  const timelineEvents = [
+  const handleNavigation = () => {
+    // 1. Redirige al enlace
+    window.open('https://eg2026.onpe.gob.pe/para-electores/elige-tu-local-de-votacion/#', '_blank'); // Abre en una nueva pestaña
+    // window.location.href = 'https://eg2026.onpe.gob.pe/para-electores/elige-tu-local-de-votacion/#'; // Abre en la pestaña actual
+  
+    // 2. Si necesitas mantener la lógica original (solo si tiene sentido):
+    // setShowMesas(!showMesas); 
+  };const timelineEvents = [
     {
       id: 1,
       fecha: '29 de Agosto',
@@ -250,18 +256,18 @@ export default function Home() {
               <p className="mx-auto max-w-2xl text-base font-normal leading-normal text-gray-600 dark:text-gray-400">Accede a toda la información que necesitas para tomar la mejor decisión en las próximas elecciones.</p>
             </div>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              <div
-                className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50 cursor-pointer"
-                onClick={() => setShowMesas(!showMesas)}
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
-                  <span className="material-symbols-outlined text-2xl">where_to_vote</span>
-                </div>
-                <div className="flex flex-col gap-1">
-                  <h2 className="text-lg font-bold leading-tight text-gray-900 dark:text-gray-100">Encuentra tu Mesa de Votación</h2>
-                  <p className="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Localiza tu centro de votación de forma rápida y sencilla para que sepas exactamente a dónde ir.</p>
-                </div>
-              </div>
+            <div
+  className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50 cursor-pointer"
+  onClick={handleNavigation} // 👈 Llama a la nueva función de manejo
+>
+  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+    <span className="material-symbols-outlined text-2xl">where_to_vote</span>
+  </div>
+  <div className="flex flex-col gap-1">
+    <h2 className="text-lg font-bold leading-tight text-gray-900 dark:text-gray-100">Encuentra tu Mesa de Votación</h2>
+    <p className="text-sm font-normal leading-normal text-gray-600 dark:text-gray-400">Localiza tu centro de votación de forma rápida y sencilla para que sepas exactamente a dónde ir.</p>
+  </div>
+</div>
               <div
                 className="flex flex-1 transform flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 transition-transform hover:-translate-y-1 dark:border-gray-800 dark:bg-gray-900/50 cursor-pointer"
                 onClick={() => setShowCandidateComparison(!showCandidateComparison)}

@@ -9,19 +9,19 @@
     "resultados": [
       {
         "candidatoId": 1,
-        "nombre": "Ana García",
+        "nombre": "Keiko Sofía Fujimori Higuchi", 
         "porcentaje": 32.0,
         "votos": 384
       },
       {
         "candidatoId": 2,
-        "nombre": "Luis Martínez",
+        "nombre": "Rafael Bernardo López-Aliaga Cazorla", 
         "porcentaje": 28.0,
         "votos": 336
       },
       {
         "candidatoId": 3,
-        "nombre": "Sofía Rodríguez",
+        "nombre": "Martín Alberto Vizcarra Cornejo", 
         "porcentaje": 25.0,
         "votos": 300
       },
@@ -45,19 +45,19 @@
     "resultados": [
       {
         "candidatoId": 1,
-        "nombre": "Ana García",
+        "nombre": "Keiko Sofía Fujimori Higuchi", 
         "porcentaje": 35.0,
         "votos": 280
       },
       {
         "candidatoId": 2,
-        "nombre": "Luis Martínez",
+        "nombre": "Rafael Bernardo López-Aliaga Cazorla", 
         "porcentaje": 30.0,
         "votos": 240
       },
       {
         "candidatoId": 3,
-        "nombre": "Sofía Rodríguez",
+        "nombre": "Martín Alberto Vizcarra Cornejo", 
         "porcentaje": 20.0,
         "votos": 160
       },
@@ -81,19 +81,19 @@
     "resultados": [
       {
         "candidatoId": 1,
-        "nombre": "Ana García",
+        "nombre": "Keiko Sofía Fujimori Higuchi", 
         "porcentaje": 45.0,
         "votos": 675
       },
       {
         "candidatoId": 2,
-        "nombre": "Luis Martínez",
+        "nombre": "Rafael Bernardo López-Aliaga Cazorla",
         "porcentaje": 38.0,
         "votos": 570
       },
       {
         "candidatoId": 3,
-        "nombre": "Sofía Rodríguez",
+        "nombre": "Martín Alberto Vizcarra Cornejo", 
         "porcentaje": 40.0,
         "votos": 600
       },
